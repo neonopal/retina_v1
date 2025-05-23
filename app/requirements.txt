@@ -1,0 +1,16 @@
+deepl==1.22.0
+fastapi==0.115.12
+langchain==0.3.25
+langchain_community==0.3.24
+langchain_core==0.3.61
+librosa==0.11.0
+numpy==2.2.6
+opencv_contrib_python==4.8.1.78
+opencv_python==4.8.1.78
+opencv_python_headless==4.8.0.74
+Pillow==11.2.1
+pydantic==2.11.5
+python-dotenv==1.1.0
+Requests==2.32.3
+torch==2.4.0
+transformers==4.44.0
