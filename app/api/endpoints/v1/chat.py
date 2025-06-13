@@ -2,7 +2,7 @@ from fastapi import APIRouter
 from app.services.llm_services import invoke_vlm
 from app.schemas.chat_model import ChatModel
 from app.services.image_preprocessing_services import convert_to_base64
-from app.services.image_preprocessing_services import processor_image
+# from app.services.image_preprocessing_services import processor_image
 from app.services.stt_services import Whisper
 # from app.services.stt_services import Wav2Vec2, Whisper
 from fastapi import UploadFile, File, HTTPException, Form
@@ -32,8 +32,8 @@ async def chat_to_llm(
         time1 = time.time()
         response = ""
         contents = file.file.read()
-        img_to_feed = processor_image(contents)
-        img_base = convert_to_base64(img_to_feed)
+        # img_to_feed = processor_image(contents)
+        img_base = convert_to_base64(contents)
         print("===GAMBAR SELESAI===")
         
         
