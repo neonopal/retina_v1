@@ -1,12 +1,12 @@
-from langchain_community.chat_models.ollama import ChatOllama
-from langchain_core.output_parsers import StrOutputParser
+# from langchain_community.chat_models.ollama import ChatOllama
+# from langchain_core.output_parsers import StrOutputParser
 from .image_preprocessing_services import convert_to_base64
-from langchain_core.messages import HumanMessage
+# from langchain_core.messages import HumanMessage
 from .translate_services import translate_text
 from .config import URL_LLM
 import logging
-from .google_serper import google_serper_agent
-from langchain.agents import initialize_agent
+# from .google_serper import google_serper_agent
+# from langchain.agents import initialize_agent
 import requests
 
 # Konfigurasi logging
