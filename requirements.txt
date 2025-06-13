@@ -10,4 +10,5 @@ Requests==2.32.3
 torch==1.13.1+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
 transformers==4.44.0
+uvicorn[standard]
 
