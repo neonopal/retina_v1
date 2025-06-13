@@ -7,8 +7,8 @@ import time
 import logging
 
 class Whisper:
-    processor = WhisperProcessor.from_pretrained("app\safetensors\whisper-tiny-manifestasi-indo")
-    model = WhisperForConditionalGeneration.from_pretrained("app\safetensors\whisper-tiny-manifestasi-indo")
+    processor = WhisperProcessor.from_pretrained("./app/safetensors/whisper-tiny-manifestasi-indo")
+    model = WhisperForConditionalGeneration.from_pretrained("./app/safetensors/whisper-tiny-manifestasi-indo")
     model.config.forced_decoder_ids = None    
 # class Wav2Vec2:
 #     processor  = Wav2Vec2Processor.from_pretrained("app\safetensors\wav2vec2-large-xlsr-bahasa-indonesia-manifestasi-indo-v3")
