@@ -10,5 +10,6 @@ torch==1.13.1+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
 transformers==4.44.0
 huggingface-hub
+python-multipart
 uvicorn[standard]
 
