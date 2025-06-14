@@ -13,7 +13,7 @@ class Whisper:
     repo_id = "manifestasi/whisper-tiny-manifestasi-indo-v2"
     filename = "model.safetensors"
     local_dir = "./app/safetensors/whisper-tiny-manifestasi-indo" # Direktori lokal untuk menyimpan model
-    print("halo nona nona");
+    print("halo nona nona cantik, saat air mataku mengalir aku butuh tisu")
     # Pastikan direktori ada
     os.makedirs(local_dir, exist_ok=True)
 
