@@ -14,20 +14,9 @@ class Whisper:
     filename = "model.safetensors"
     local_dir = "./app/safetensors/whisper-tiny-manifestasi-indo" # Direktori lokal untuk menyimpan model
     print("halo nona nona cantik, saat air mataku mengalir aku butuh tisu")
-    # Pastikan direktori ada
-    os.makedirs(local_dir, exist_ok=True)
-
-    # Unduh model jika belum ada
-    model_path = os.path.join(local_dir, filename)
-    if not os.path.exists(model_path):
-        print(f"Mengunduh {filename} dari Hugging Face Hub...")
-        model_path = hf_hub_download(repo_id=repo_id, filename=filename, local_dir=local_dir)
-        print(f"Model diunduh ke: {model_path}")
-    else:
-        print(f"Model {filename} sudah ada secara lokal.")
     
-    processor = WhisperProcessor.from_pretrained("./app/safetensors/whisper-tiny-manifestasi-indo")
-    model = WhisperForConditionalGeneration.from_pretrained("./app/safetensors/whisper-tiny-manifestasi-indo")
+    processor = WhisperProcessor.from_pretrained(repo_id)
+    model = WhisperForConditionalGeneration.from_pretrained(repo_id)
     model.config.forced_decoder_ids = None    
 # class Wav2Vec2:
 #     processor  = Wav2Vec2Processor.from_pretrained("app\safetensors\wav2vec2-large-xlsr-bahasa-indonesia-manifestasi-indo-v3")
