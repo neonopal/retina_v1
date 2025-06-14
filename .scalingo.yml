@@ -1,4 +1,0 @@
-pre_release_commands:
-  - echo "Checking out Git LFS files..."
-  - git lfs pull --include="app/safetensors/whisper-tiny-manifestasi-indo/model.safetensors"
-  - echo "Git LFS pull complete."
